@@ -6,7 +6,7 @@ Summary:	A Python interface to the gnuplot plotting program
 Summary(pl):	Interfejs dla Pythona do programu tworz±cego wykresy - gnuplot
 Name:		python-%{module}
 Version:	1.5
-Release:	4
+Release:	5
 License:	GPL
 Group:		Libraries/Python
 Source0:	http://dl.sourceforge.net/gnuplot-py/%{module}-%{version}.tar.gz
