@@ -1,6 +1,6 @@
 %include 	/usr/lib/rpm/macros.python
 
-%define		module Gnuplot
+%define		module	Gnuplot
 
 Summary:	A Python interface to the gnuplot plotting program
 Summary(pl):	Interfejs dla Pythona do programu tworz±cego wykresy - gnuplot
