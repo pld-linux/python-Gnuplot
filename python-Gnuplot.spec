@@ -9,7 +9,7 @@ Version:	1.5
 Release:	1
 License:	GPL
 Group:		Libraries/Python
-Source0:	http://prdownloads.ysourceforge.net/gnuplot-py/%{module}-%{version}.tar.gz
+Source0:	http://prdownloads.sourceforge.net/gnuplot-py/%{module}-%{version}.tar.gz
 URL:		http://gnuplot-py.sourceforge.net/
 Requires:	gnuplot
 %requires_eq	python
