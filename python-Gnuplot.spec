@@ -11,11 +11,12 @@ License:	GPL
 Group:		Libraries/Python
 Source0:	http://prdownloads.sourceforge.net/gnuplot-py/%{module}-%{version}.tar.gz
 URL:		http://gnuplot-py.sourceforge.net/
-Requires:	gnuplot
-Requires:	python-numpy
-%pyrequires_eq	python-modules
+BuildRequires:	python >= 2.2.1
 BuildRequires:	python-numpy
 BuildRequires:	rpm-pythonprov
+%pyrequires_eq	python-modules
+Requires:	gnuplot
+Requires:	python-numpy
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
