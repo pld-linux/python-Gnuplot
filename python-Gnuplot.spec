@@ -6,7 +6,7 @@ Summary:	A Python interface to the gnuplot plotting program
 Summary(pl):	Interfejs dla Pythona do programu tworz±cego wykresy - gnuplot
 Name:		python-%{module}
 Version:	1.5
-Release:	3
+Release:	4
 License:	GPL
 Group:		Libraries/Python
 Source0:	http://prdownloads.sourceforge.net/gnuplot-py/%{module}-%{version}.tar.gz
@@ -40,13 +40,12 @@ python setup.py install \
 	--root=$RPM_BUILD_ROOT
 
 mv -f doc html
-gzip -9nf ANNOUNCE.txt README.txt NEWS.txt CREDITS.txt TODO.txt
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files 
 %defattr(644,root,root,755)
-%doc *.gz Gnuplot.html html
+%doc ANNOUNCE.txt README.txt NEWS.txt CREDITS.txt TODO.txt Gnuplot.html html
 %dir %{py_sitedir}/%{module}
 %{py_sitedir}/%{module}/*.py[co]
