@@ -13,7 +13,6 @@ Source0:	http://dl.sourceforge.net/gnuplot-py/%{module}-%{version}.tar.gz
 URL:		http://gnuplot-py.sourceforge.net/
 BuildRequires:	python >= 2.2.1
 BuildRequires:	python-numpy
-BuildRequires:	rpm-pythonprov
 %pyrequires_eq	python-modules
 Requires:	gnuplot
 Requires:	python-numpy
