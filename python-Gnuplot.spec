@@ -3,7 +3,7 @@
 %define		module Gnuplot
 
 Summary:	A Python interface to the gnuplot plotting program
-Summary(pl):	Interfejs dla Python'a do programu tworz±cego wykresy - gnuplot
+Summary(pl):	Interfejs dla Pythona do programu tworz±cego wykresy - gnuplot
 Name:		python-%{module}
 Version:	1.5
 Release:	1
@@ -20,8 +20,8 @@ Gnuplot.py is a Python package that allows you to create graphs from
 within Python using the gnuplot plotting program.
 
 %description -l pl
-Gnuplot.py jest modu³em Python'a pozwalaj±cym na tworzenie wykresów z poziomu
-Python'a u¿ywaj±c do tego programu gnuplot.
+Gnuplot.py jest modu³em Pythona pozwalaj±cym na tworzenie wykresów z
+poziomu Pythona u¿ywaj±c do tego programu gnuplot.
 
 %prep
 %setup -q -n %{module}-%{version}
