@@ -1,15 +1,16 @@
 
-%define		module	Gnuplot
+%define		module	gnuplot
+%define		dname	gnuplot-py
 
 Summary:	A Python interface to the gnuplot plotting program
 Summary(pl):	Interfejs dla Pythona do programu tworz±cego wykresy - gnuplot
 Name:		python-%{module}
-Version:	1.5
-Release:	7
+Version:	1.7
+Release:	0.1
 License:	GPL
 Group:		Libraries/Python
-Source0:	http://dl.sourceforge.net/gnuplot-py/%{module}-%{version}.tar.gz
-# Source0-md5:	94da6c11af51d5872c498e59fd31c9a0
+Source0:	http://dl.sourceforge.net/gnuplot-py/%{dname}-%{version}.tar.gz
+# Source0-md5:	724f9eee164d6ff763777b22a5851572
 URL:		http://gnuplot-py.sourceforge.net/
 BuildRequires:	python >= 2.2.1
 BuildRequires:	python-numpy
@@ -28,7 +29,7 @@ Gnuplot.py jest modu³em Pythona pozwalaj±cym na tworzenie wykresów z
 poziomu Pythona u¿ywaj±c do tego programu gnuplot.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{dname}-%{version}
 
 %build
 python setup.py build
@@ -46,5 +47,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc ANNOUNCE.txt README.txt NEWS.txt CREDITS.txt TODO.txt Gnuplot.html html
-%dir %{py_sitescriptdir}/%{module}
-%{py_sitescriptdir}/%{module}/*.py[co]
+%dir %{py_sitescriptdir}/Gnuplot
+%{py_sitescriptdir}/Gnuplot/*.py[co]
