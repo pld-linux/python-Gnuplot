@@ -13,10 +13,10 @@ Source0:	http://dl.sourceforge.net/gnuplot-py/%{dname}-%{version}.tar.gz
 # Source0-md5:	724f9eee164d6ff763777b22a5851572
 URL:		http://gnuplot-py.sourceforge.net/
 BuildRequires:	python >= 2.2.1
-BuildRequires:	python-numpy
+BuildRequires:	python-Numeric
 %pyrequires_eq	python-modules
 Requires:	gnuplot
-Requires:	python-numpy
+Requires:	python-Numeric
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
