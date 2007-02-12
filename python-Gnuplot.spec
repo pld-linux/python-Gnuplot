@@ -3,7 +3,7 @@
 %define		dname	gnuplot-py
 
 Summary:	A Python interface to the gnuplot plotting program
-Summary(pl):	Interfejs dla Pythona do programu tworz±cego wykresy - gnuplot
+Summary(pl.UTF-8):   Interfejs dla Pythona do programu tworzÄ…cego wykresy - gnuplot
 Name:		python-%{module}
 Version:	1.7
 Release:	0.1
@@ -24,9 +24,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Gnuplot.py is a Python package that allows you to create graphs from
 within Python using the gnuplot plotting program.
 
-%description -l pl
-Gnuplot.py jest modu³em Pythona pozwalaj±cym na tworzenie wykresów z
-poziomu Pythona u¿ywaj±c do tego programu gnuplot.
+%description -l pl.UTF-8
+Gnuplot.py jest moduÅ‚em Pythona pozwalajÄ…cym na tworzenie wykresÃ³w z
+poziomu Pythona uÅ¼ywajÄ…c do tego programu gnuplot.
 
 %prep
 %setup -q -n %{dname}-%{version}
