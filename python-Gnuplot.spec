@@ -3,7 +3,7 @@
 %define		dname	gnuplot-py
 
 Summary:	A Python interface to the gnuplot plotting program
-Summary(pl.UTF-8):   Interfejs dla Pythona do programu tworzącego wykresy - gnuplot
+Summary(pl.UTF-8):	Interfejs dla Pythona do programu tworzącego wykresy - gnuplot
 Name:		python-%{module}
 Version:	1.7
 Release:	0.1
