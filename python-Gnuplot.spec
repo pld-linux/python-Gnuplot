@@ -5,18 +5,18 @@
 Summary:	A Python interface to the gnuplot plotting program
 Summary(pl.UTF-8):	Interfejs dla Pythona do programu tworzącego wykresy - gnuplot
 Name:		python-%{module}
-Version:	1.7
+Version:	1.8
 Release:	0.1
 License:	GPL
 Group:		Libraries/Python
 Source0:	http://dl.sourceforge.net/gnuplot-py/%{dname}-%{version}.tar.gz
-# Source0-md5:	724f9eee164d6ff763777b22a5851572
+# Source0-md5:	abd6f571e7aec68ae7db90a5217cd5b1
 URL:		http://gnuplot-py.sourceforge.net/
 BuildRequires:	python >= 2.2.1
-BuildRequires:	python-Numeric
+BuildRequires:	python-numpy
 %pyrequires_eq	python-modules
 Requires:	gnuplot
-Requires:	python-Numeric
+Requires:	python-numpy
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -39,6 +39,7 @@ rm -rf $RPM_BUILD_ROOT
 python setup.py install \
 	--root=$RPM_BUILD_ROOT
 
+rm -Rf $RPM_BUILD_ROOT/%{py_sitescriptdir}/Gnuplot/*.py
 mv -f doc html
 
 %clean
@@ -49,3 +50,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc ANNOUNCE.txt README.txt NEWS.txt CREDITS.txt TODO.txt Gnuplot.html html
 %dir %{py_sitescriptdir}/Gnuplot
 %{py_sitescriptdir}/Gnuplot/*.py[co]
+%{py_sitescriptdir}/*.egg-info
