@@ -32,12 +32,11 @@ poziomu Pythona używając do tego programu gnuplot.
 %setup -q -n %{dname}-%{version}
 
 %build
-python setup.py build
+%py_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-python setup.py install \
-	--root=$RPM_BUILD_ROOT
+%py_install
 
 rm -Rf $RPM_BUILD_ROOT/%{py_sitescriptdir}/Gnuplot/*.py
 mv -f doc html
