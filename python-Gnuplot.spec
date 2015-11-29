@@ -12,6 +12,7 @@ Group:		Libraries/Python
 Source0:	http://dl.sourceforge.net/gnuplot-py/%{dname}-%{version}.tar.gz
 # Source0-md5:	abd6f571e7aec68ae7db90a5217cd5b1
 URL:		http://gnuplot-py.sourceforge.net/
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	python >= 2.2.1
 BuildRequires:	python-numpy
 %pyrequires_eq	python-modules
